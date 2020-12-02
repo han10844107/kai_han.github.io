@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resume</title>
+	<link rel="stylesheet" type="text/css" href="css/resume.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">	
+	<link rel="con" href="pic/dog.ico" type="image/x-con">
+</head>
+<body background="pic/bg.jpg" style="font-family:微軟正黑體;">
+	<div style="padding:12px 120px; width:1550px; margin:auto;">
+		<div class="mini rounded">
+			<div class="mad rounded">
+				<div class="a_1 rounded-top">
+					<div style="position:absolute;">
+						<img src="pic/01.jpg" class="head rounded">
+					</div>
+					
+				</div>
+				<div class="a_2 rounded-bottom">
+					<div class="a_3">
+						<p class="mee">張凱涵</p>
+						<h1 class="about">Connie Chang</h1>
+						<h2 class="about" style="margin-bottom: 10px;;">CYIM</h2>
+						<a href="https://www.facebook.com/profile.php?id=100004585235503" target="_blank" title="FaceBook"><img src="pic/fb.png" class="con"></a>
+						<a href="https://www.instagram.com/han___ann/" target="_blank" title="Instagram"><img src="pic/ig.png" class="con"></a>
+						<a href="mailto:s963713015@gmail.com" target="_blank" title="Gmail"><img src="pic/gmail.png" class="con"></a>
+					</div>
+					<div class="a_4">
+						<div class="tit1 rounded-left">程式及專業技能</div>
+						<div class="progress" style="margin-top:80px;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:87%;">C#</div>&nbsp;87%
+						</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:62%">Java</div>&nbsp;62%
+						</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:55%">Android studio</div>&nbsp;55%
+						</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:69%">Html&nbsp;/&nbsp;Css&nbsp;/&nbsp;JS</div>&nbsp;69%
+						</div>
+						
+					</div>
+					<div class="tit2 rounded-right">
+						課程專案
+					</div>
+					<div>
+						<button class="classprogram btn" style="margin-left:220px;" onclick="openCity(event, 'coffee')">企業概論</button>
+						<button class="classprogram btn" onclick="openCity(event, 'nightmarket')">管理學</button>
+						<button class="classprogram btn" onclick="openCity(event, 'dfrc')">多媒期中專案</button>
+					</div>
+					<div id="coffee" class="tabcontent">
+						<div class="detail" style="width:565px;">
+							<p class="protitle">資想皂起來</p>
+							<p>
+								企概報告是上大學後第一個要去販賣東西的企劃，它是像一間小型公司，從無到有都由我們自己規劃，如何行銷、販賣、活動，都是我們自己的想法，再把它背後的公益團體推廣出去，我覺得是很有意義的一堂課，雖然很累但也從中學習到團隊合作、創意規劃等等許多的想法。
+							</p>
+						</div>
+						<div class="box">
+							<img src="pic/SOAP.jpg" class="cls">
+						</div>	
+					</div>
+					<div id="nightmarket" class="tabcontent">
+						<div class="detail" style="width:565px;">
+							<p class="protitle">Lady bean </p>
+							<p>這是我們管理學的團體名稱，主要是幫助公益團體販賣餅乾，有點類似幫助之前企概課那樣，很開心下學期也一樣能夠投入幫助公益團體，在擺攤的過程中才體會到原來拉客和叫賣也是一件難事，如何能夠吸引客人前來和聽你訴說商品等等，都是要繼續學習的。</p>
+						</div>
+						<div class="box">
+							<img src="pic/bean.jpg" class=" cls">
+						</div>
+					</div>
+					<div id="dfrc" class="tabcontent">
+						<div class="detail" style="width:400px;">
+							<p class="protitle">體育館行銷</p>
+							<p>這是我們第一次做出一個網頁，從想法構想、拍影片等等都是自己來，很特別的一堂課，但難度也是有點高，期許自己能夠做出自己喜歡並且別人看得舒服、便利的網頁！</p>
+						</div>
+						<div class="box">
+							<img src="pic/doomay.PNG" class="cls">
+						</div>
+					</div>
+					
+					<script>
+						function openCity(evt, programName)
+						{
+							var i, tabcontent, tablinks;
+							tabcontent = document.getElementsByClassName("tabcontent");
+							for (i = 0; i < tabcontent.length; i++)
+							{
+								tabcontent[i].style.display = "none";
+							}
+							tablinks = document.getElementsByClassName("tablinks");
+							for (i = 0; i < tablinks.length; i++)
+							{
+								tablinks[i].className = tablinks[i].className.replace(" active", "");
+							}
+							document.getElementById(programName).style.display = "block";
+							evt.currentTarget.className += " active";
+						}
+					</script>
+					<div class="tit3 rounded-right">
+						參與系上活動經歷
+					</div>
+					<div class="exp">
+						 <img src="pic/sonla.jpg" class="fire">
+						 <div style="float:left; margin-left:8px; width:580px;">
+						 	<p class="protitle">資管X心理 資心宿營</p>
+							 <p>資心宿營是我第一次參加資管的大型活動，和心理系一起合辦，中間將近兩個月的時間我們大家每天練習聚在一起，那時候就算每天都很累，但還是很開心能跟大家聚在一起，也交到許多很喜歡的朋友，每天撒下的汗水在最後一天的時候，感覺一切都值得了，儘管過程可能會有許多爭吵，但一切都是很好的回憶。</p>
+						 </div>
+					</div>
+					<div class="exp">						
+						 <div style="float:left; margin-left:5px; margin-left:8px; width:580px;">
+						 	<p class="protitle">十字路口</p>
+						 	<p>十字路口是宿營後的第一個活動，帶著許多的學弟妹在中原夜市裡穿梭，並且介紹許多好吃的食物，很多都是連我自己也不知道到的，很好的活動，可以拉近彼此感情，同時也增廣見聞了呢！</p>						 	
+						 </div>
+						 <img src="pic/road.jpg" class="club">
+					</div>
+					<div class="exp">
+						<img src="pic/cyim.jpg" class="fire">
+						 <div style="float:left; margin-left:8px; width:580px;">
+						 	<p class="protitle">資管之夜 金資玉夜</p>
+						 	<p>一年一度的資管資夜是資管系很大的活動，今年不同的是我參與了活動股，從無到有一天一天慢慢練，很喜歡一起練習的時光，活動股比每個班級都更早開始練習，只為了要給大家更好的一部戲，雖然有些美中不足，但在我心裡，我們都是最棒的，謝謝大家一同參與了這個活動。</p>
+						 </div>
+					</div>
+					<footer class="rounded-bottom footer">
+						<p>2020 by Kai-han Chang</p>
+					</footer>
+				</div>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
